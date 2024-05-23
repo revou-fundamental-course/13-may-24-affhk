@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Trica!</h1>
+        <section>
+            <p>Calculate the area and circumference of any triangle with just a few clicks!</p>
+        </section>
+        
+    </header>
+    
+    <!-- LUAS -->
+    <section id="area-section">
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <!-- Button switch ke KELILING -->
+        <button type="button" id="switch-keliling">Pindah ke Keliling Segitiga</button>
+        
+        <section>
+            <div class="section-content">
+                <h2>Luas Segitiga</h2>
+            </div>
+
+            <!-- Konten LUAS -->
+            <div class="formula-img">
+                <img src="https://i.pinimg.com/736x/8a/99/e5/8a99e5051b0735b5f08c39448481039f.jpg" alt="gambar segitiga" height="200" width="200">
+            </div>
+            <p>Rumus Luas Segitiga</p>
+            <div class="rumus">
+                <p class="formula">L = 1/2 x a x t</p>                                           
+            </div>               
+            <p>Di mana:<br> L = Luas <br> a = Panjang alas <br> t = Tinggi</p>
+            <hr>
+
+            <!-- Form LUAS -->
+            <section>
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+                <form>
+                    <section>
+                        <div>
+                            <label for="alasInput">Alas</label><input type="number" id="alasInput" required>
+                        </div>
+                        <div>
+                            <label for="tinggiInput">Tinggi</label><input type="number" id="tinggiInput" required>
+                        </div>
+                    </section>
+                    <!-- Result hitung luas -->                    
+                    <p id="hasil">Luas = <span id="area-result"></span></p>
+                    <button type="button" id="calc-btn">Hitung</button>
+                    <button type="reset" id="reset-btn">Reset</button>
+                </form>
+            </section>  
+        </section>
+    </section>
+    
+    <!-- KELILING -->
+    <section id="circumference-section" style="display: none;">
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <!-- Button switch ke LUAS -->
+        <button type="button" id="switch-luas">Pindah ke Luas Segitiga</button>
+        
+        <section>
+            <div class="section-content">
+                <h2>Keliling Segitiga</h2>
+            </div>
+
+            <!-- Konten keliling -->
+            <div class="formula-img">
+                <img src="https://i.pinimg.com/736x/8a/99/e5/8a99e5051b0735b5f08c39448481039f.jpg" alt="gambar segitiga" height="200" width="200">
+            </div>
+            <p>Rumus Keliling Segitiga</p>
+            <div class="rumus">
+                <p class="formula">K = A + B + C</p>                
+            </div>               
+            <p>Di mana:<br> K = Keliling <br> A = Panjang sisi A <br> B = Panjang sisi B <br> C = Panjang sisi C</p>
+            <hr>
+
+            <!-- Form Keliling -->
+            <section>
+                <header>
+                    <h2>Hitung Keliling Segitiga</h2>
+                </header>
+                <form>
+                    <section>
+                        <div>
+                            <label for="sisiAInput">Sisi A</label><input type="number" id="sisiAInput" required>
+                        </div>
+                        <div>
+                            <label for="sisiBInput">Sisi B</label><input type="number" id="sisiBInput" required>
+                        </div>
+                        <div>
+                            <label for="sisiCInput">Sisi C</label><input type="number" id="sisiCInput" required>
+                        </div>
+                    </section>
+                    
+                    <!-- Result hitung keliling -->
+                    <p id="hasil">Keliling = <span id="circumference-result"></span></p>
+                    <button type="button" id="calcCircumferenceBtn">Hitung</button>
+                    <button type="reset" id="resetCircumferenceBtn">Reset</button>                    
+                </form>
+            </section>  
+        </section>
+    </section>
+
+    <!-- JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
